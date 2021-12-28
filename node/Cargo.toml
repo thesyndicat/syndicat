@@ -1,17 +1,17 @@
 [package]
-name = 'node-template'
+name = 'syndicat-node'
 version = '4.0.0-dev'
-description = 'A fresh FRAME-based Substrate node, ready for hacking.'
-authors = ['Substrate DevHub <https://github.com/substrate-developer-hub>']
-homepage = 'https://substrate.io/'
+description = 'A FRAME-based Syndicat node.'
+authors = ['geneidy <https://github.com/geneidy>']
+homepage = 'https://www.thesyndicat.co/'
 edition = '2021'
 license = 'Unlicense'
 publish = false
-repository = 'https://github.com/substrate-developer-hub/substrate-node-template/'
+repository = 'https://github.com/thesyndicat/syndicat'
 build = 'build.rs'
 
 [[bin]]
-name = 'node-template'
+name = 'syndicat-node'
 
 [package.metadata.docs.rs]
 targets = ['x86_64-unknown-linux-gnu']
@@ -21,7 +21,7 @@ git = 'https://github.com/paritytech/substrate.git'
 tag = 'monthly-2021-12'
 version = '3.0.0'
 
-[dependencies.node-template-runtime]
+[dependencies.syndicat-node-runtime]
 path = '../runtime'
 version = '4.0.0-dev'
 
@@ -169,4 +169,4 @@ version = '4.0.0-dev'
 
 [features]
 default = []
-runtime-benchmarks = ['node-template-runtime/runtime-benchmarks']
+runtime-benchmarks = ['syndicat-node-runtime/runtime-benchmarks']
